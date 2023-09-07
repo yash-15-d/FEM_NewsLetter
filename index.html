@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+</head>
+<body class="w-screen h-screen flex flex-col justify-center items-center bg-gray-800 ">
+
+  <!-- Sign-up form start -->
+
+  <section class="w-[750px] h-[500px] flex justify-center items-center bg-white rounded-3xl flex-row first" >
+
+    <div class="w-[350px] flex justify-start flex-col mr-8">
+      <h2 class="text-3xl font-bold mb-4">Stay Updated!</h2>
+      <span class="mb-2">Join 60,000+ product managers receiving monthly updates on:</span>
+
+      <div class="mt-2 mb-4">
+        <div class="flex mt-3">
+          <img src="./assets/images/icon-list.svg" alt="">
+          <p class="ml-2">Product discovery and building what matters</p>
+        </div>
+
+        <div class="flex mt-3">
+          <img src="./assets/images/icon-list.svg" alt="">
+          <p class="ml-2">Measuring to ensure updates are a success</p>
+        </div>
+
+        <div class="flex mt-3">
+          <img src="./assets/images/icon-list.svg" alt="">
+          <p class="ml-2">And much more!</p>
+        </div>
+      </div>
+
+      <form action="" class="flex flex-col mt-3" onsubmit="return validate()">
+        
+        <div class="flex justify-between w-full h-7">
+          <label class="text-sm mt-2" for="email">Email Address</label>
+          <span class=" mt-2 mb-2 w-3/4 h-5 text-red-600 text-right" id="error-msg"></span>
+        </div>
+
+        <input  type="text" name="Email" id="input" placeholder="abc@gmail.com" class="w-full rounded-md mt-3 border-2 border-gray-500 p-5 h-11 focus:outline-none hover:border-blue-400 ease-out duration-300">
+
+        <button type="submit" class=" mt-5 w-full bg-sky-950 font-semibold text-white h-[50px] rounded-md hover:scale-105 ease-out duration-300" id="submit">Subscribe to monthly newsletter</button>
+      </form>
+
+    </div>
+
+    
+    <div class="w-[300px]">
+      <img src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+    </div>
+    
+  </section>
+
+  <!-- 2nd state -->
+
+  <section class="w-[450px] h-[450px] bg-white rounded-3xl flex justify-start items-start flex-col p-5 hidden second">
+    <img src="./assets/images/icon-success.svg" class="ml-10 mt-9" alt="">
+
+    <h2 class="ml-10  mt-5 font-sans font-extrabold text-4xl">Thanks for subscribing!</h2></h2>
+
+    <p class="ml-10 mt-4">
+      A confirmation email has been sent to <span>ash@loremcompany.com.</span>
+      Please open it and click the button inside to confirm your subscription.
+    </p>
+    <button
+      class=" mt-5 w-80 font-semibold text-white h-[50px] rounded-md hover:scale-105 ease-in-out duration-300 group-hover:shadow-lg shadow-pink-500 ml-10 bg-gradient-to-r from-pink-500 to-orange-500" onclick="check()" id="btn2">Dismiss Message</button>
+  </section>
+
+  <!-- Join 60,000+ product managers receiving monthly updates on:
+
+  
+  And much more!
+
+  Email address
+  email@company.com
+
+  Subscribe to monthly newsletter -->
+
+  <!-- Sign-up form end -->
+
+  <!-- Success message start -->
+
+  <!-- Success message end -->
+
+  
+  <div class="attribution text-gray-100">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Yash</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
